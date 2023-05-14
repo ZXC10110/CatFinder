@@ -1,39 +1,4 @@
-import { supabase } from "../supabase"
-
-/**
- * @swagger
-* /api/adopt/editAdopt:
-*    post:
-*      tags:
-*        - adopt
-*      summary: edit adopt for shelter
-*      description: edit adopt for shelter
-*      operationId: editAdopt
-*      requestBody:
-*        content:
-*          application/json:
-*            schema:
-*              $ref: '#/components/schemas/AdoptEditRequest'
-*      responses:
-*        '200':
-*          description: Edit Successful
-*        '400':
-*          description: Edit Failed Due to Incorrect Input
-* components:
-*  schemas:
-*    AdoptEditRequest:
-*      type: object
-*      properties:
-*        adopt_id:
-*          type: integer
-*          example: 0
-*        login_id:
-*          type: string
-*          example: "fadadb65-080e-4be8-a3dc-163df80e0918"
-*        queue_status:
-*          type: boolean
-*          example: true
-*/    
+import { supabase } from "../supabase"   
 
 //edit for shelter
 export default async function handler(req, res) {

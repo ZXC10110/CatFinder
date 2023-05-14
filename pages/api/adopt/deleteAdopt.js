@@ -1,37 +1,5 @@
 import { supabase } from "../supabase"
 
-/**
- * @swagger
-* /api/adopt/deleteAdopt:
-*    post:
-*      tags:
-*        - adopt
-*      summary: delete adopt for user
-*      description: delete adopt for user
-*      operationId: deleteAdopt
-*      requestBody:
-*        content:
-*          application/json:
-*            schema:
-*              $ref: '#/components/schemas/AdoptDeleteRequest'
-*      responses:
-*        '200':
-*          description: Delete Successful
-*        '400':
-*          description: Delete Failed Due to Incorrect Input
-* components:
-*  schemas:
-*    AdoptDeleteRequest:
-*      type: object
-*      properties:
-*        adopt_id:
-*          type: integer
-*          example: 1
-*        login_id:
-*          type: string
-*          example: "0fb8be3d-e566-4c87-8f1b-553d6dcf2ca3"
-*/    
-
 //delete for user
 export default async function handler(req, res) {
 

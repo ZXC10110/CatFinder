@@ -1,38 +1,5 @@
 import { supabase } from "../supabase"
 
-/**
- * @swagger
-* /api/adopt/createAdopt:
-*    post:
-*      tags:
-*        - adopt
-*      summary: create adopt for user
-*      description: create adopt for user
-*      operationId: createAdopt
-*      requestBody:
-*        content:
-*          application/json:
-*            schema:
-*              $ref: '#/components/schemas/AdoptCreateRequest'
-*      responses:
-*        '200':
-*          description: Create Successful
-*        '400':
-*          description: Create Failed Due to Incorrect Input
-* components:
-*  schemas:
-*    AdoptCreateRequest:
-*      type: object
-*      properties:
-*        queue_id:
-*          type: integer
-*          example: 1
-*        adopt_date:
-*          type: string
-*          format: date-time
-*          example: '2022-12-23'
-*/    
-
 export default async function handler(req, res) {
 
   //call parameter from body
